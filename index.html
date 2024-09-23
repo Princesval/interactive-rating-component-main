@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="main-div">
+    <div id="container-foto1">
+      <img src="images/icon-star.svg" alt="orange star icon" id="star-image">
+    </div>
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <div id="score">
+      <input type="radio" name="score" id="score1-button" value="1">
+      <label for="score1-button">1</label>
+
+      <input type="radio" name="score" id="score2-button" value="2">
+      <label for="score2-button">2</label>
+
+      <input type="radio" name="score" id="score3-button" value="3">
+      <label for="score3-button">3</label>
+
+      <input type="radio" name="score" id="score4-button" value="4">
+      <label for="score4-button">4</label>
+
+      <input type="radio" name="score" id="score5-button" value="5">
+      <label for="score5-button">5</label>
+    </div>
+
+    <button id="submit-button" onclick="changeDiv()">Submit</button>
+
+  </div>
+
+  <div id="hidden-div">
+    <div id="container-foto2">
+      <img src="images/illustration-thank-you.svg" id="phone" alt="Smartphone">
+    </div>
+    <p id="score-result"></p>
+    <p id="thank-you-p">Thank you!</p>
+    <p id="hidden-div-info">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don't hesitate to get in touch!
+    </p>
+  </div>
+
+  <footer>
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by 
+    <a href="https://github.com/Princesval" target="_blank">João Vitor Princesval Caetano</a>.
+  </footer>
+
+  <script src="code.js"></script>
+</body>
+</html>

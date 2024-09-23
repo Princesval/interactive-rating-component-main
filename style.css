@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --DarkBlue2: hsl(213, 19%, 22%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--VeryDarkBlue);
+}
+
+div#main-div {
+    background-color: var(--DarkBlue);
+    max-width: 425px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+img#star-image {
+    background-color: var(--DarkBlue2);
+    width: 20px;
+    height: 20px;
+    border-radius: 21px;
+    padding: 12px;
+}
+
+h1 {
+    color: var(--White);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+div#main-div p {
+    color: var(--LightGrey);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+div#score {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--DarkBlue2);
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: var(--LightGrey);
+    cursor: pointer;
+}
+
+input[type="radio"] + label:hover {
+    background-color: var(--Orange);
+    color: var(--DarkBlue);
+    transition: 0.3s ease;
+}
+  
+input[type="radio"]:checked + label {
+    background-color: var(--White);
+    color: black;
+    transition: 0.3s ease;
+}
+
+button {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--Orange);
+    border: none;
+    padding: 12px 0px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--White);
+    color: black;
+    transition: 0.3s ease;
+}
+
+div#hidden-div {
+    background-color: var(--DarkBlue);
+    max-width: 425px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 15px;
+    display: none;
+}
+img#phone {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+p#score-result {
+    background-color: var(--DarkBlue2);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+    color: var(--Orange);
+    padding: 8px;
+    margin-bottom: 30px;
+}
+
+p#thank-you-p {
+    text-align: center;
+    font-size: 2em;
+    color: var(--White);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p#hidden-div-info {
+    color: var(--LightGrey);
+    text-align: center;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
