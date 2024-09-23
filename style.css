@@ -161,3 +161,22 @@ footer a {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+@media(max-width: 425px) {
+    div#main-div, div#hidden-div {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 15px;
+    }
+    p#score-result {
+        width: 70%;
+    }
+
+}
