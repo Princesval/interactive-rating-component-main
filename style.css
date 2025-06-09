@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Orange500: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(217, 12%, 63%);
+    --Grey850: hsl(213, 19%, 28%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey950);
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: var(--Grey900);
+    box-sizing: border-box;
+    padding: 30px;
+    width: 400px;
+    border-radius: 25px;
+    /* ---------------------------- */
+}
+
+main img {
+    background-color: var(--Grey850);
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+main h1 {
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+main p {
+    color: var(--Grey500);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#rating-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--Grey850);
+    color: var(--Grey500);
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.rating-btn:hover {
+    background-color: var(--Orange500);
+    transition: 0.4s ease;
+    color: var(--Grey950);
+}
+
+#submit-btn {
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--Orange500);
+    color: var(--Grey950);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: var(--White);
+    transition: 0.4s ease;
+}
+
+#ty-div {
+    background-color: var(--Grey900);
+    width: 400px;
+    box-sizing: border-box;
+    padding: 35px 25px;
+    border-radius: 25px;
+    text-align: center;
+    display: none;
+}
+
+#ty-div img {
+    width: 120px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#js-span {
+    color: var(--Orange500);
+    background-color: var(--Grey850);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+#ty-div h2{
+    margin-top: 25px;
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+#ty-div p {
+    color: var(--Grey500);
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: var(--Grey500);
+}
+
+footer a {
+    color: var(--Orange500);
+}
+
+@media(max-width: 480px) {
+    main, #ty-div {
+        width: 90vw;
+    }
+
+    .rating-btn {
+    width: 42px;
+    height: 42px;
+    }
+}
